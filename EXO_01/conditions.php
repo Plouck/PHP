@@ -50,7 +50,7 @@
 
  ?> -->
 
-<?php
+<!-- <?php
  $age=$_POST["Age"];
  $sexe = $_POST ["gender"];
  $langue = $_POST["langue"];
@@ -118,4 +118,44 @@ if ($langue == "french") {
    }
   }
   echo $verdict;
-?>
+?> -->
+
+<!-- <?php
+ $note=$_POST["note"];
+
+ if ($note <= 3) {
+   $resultat = "Ce travail est nul.";
+ }
+ elseif ($note >= 6 and $note <= 9 ) {
+   $resultat = "Ce travail n'est pas terrible.";
+ }
+ elseif ($note == 10 ) {
+   $resultat = "Tout juste!";
+ }
+ elseif ($note >= 11 and $note <= 14 ) {
+   $resultat = "C'est pas mal.";
+ }
+ elseif ($note >= 15 and $note <= 18 ) {
+   $resultat = "Bravo!";
+ }
+ elseif ($note == 19 or $note == 20) {
+   $resultat = "Police! Arrêtez ce tricheur!";
+ }
+ else {
+   $resultat = "ERREUR";
+ }
+echo $resultat;
+?> -->
+
+
+<?php
+$age=$_POST["Age"];
+$sexe = $_POST ["gender"];
+
+$resultat ="Désolé, vous ne remplissez pas les critères de sélection.";
+
+if ($age >=21 and $age <= 40 and $sexe == "femme") {
+  $resultat = "Bonjour, bienvenue parmi nous!";
+}
+echo $resultat;
+ ?>
