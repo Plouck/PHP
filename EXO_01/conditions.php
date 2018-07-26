@@ -1,3 +1,5 @@
+<?php include('verificationETnote.php'); ?>
+
 <!-- <?php
   $chambre_est_sale = true ;
 
